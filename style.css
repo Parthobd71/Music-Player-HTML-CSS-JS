@@ -457,7 +457,8 @@ aside {
     padding-bottom: 0;
     position: relative;
 }
-.songs-tab:after{
+
+.songs-tab:after {
     content: '';
     position: absolute;
     top: 100%;
@@ -466,7 +467,8 @@ aside {
     height: 2px;
     background-image: linear-gradient(90deg, rgb(48 69 95) 0%, rgb(12 25 41) 100%);
 }
-.songs-tab h2{
+
+.songs-tab h2 {
     font-size: 1rem;
     font-weight: 500;
     color: var(--gray-light-text);
@@ -475,10 +477,12 @@ aside {
     cursor: pointer;
     position: relative;
 }
-.active-song-list:after{
+
+.active-song-list:after {
     width: 100% !important;
 }
-.songs-tab h2:after{
+
+.songs-tab h2:after {
     content: '';
     position: absolute;
     top: 100%;
@@ -489,10 +493,12 @@ aside {
     background-color: var(--theme-color);
     transition: var(--transition-1);
 }
-.songs-tab h2.active-song-list:after{
+
+.songs-tab h2.active-song-list:after {
     width: 100%;
 }
-.song-wrapper{
+
+.song-wrapper {
     width: 100%;
     height: 600px;
     overflow-y: scroll;
@@ -502,18 +508,21 @@ aside {
     margin-top: 20px;
     padding-right: 20px;
 }
-.show-songs{
+
+.show-songs {
     animation: show_songs var(--transition-1) var(--light-color);
 }
-.song-wrapper::-webkit-scrollbar{
+
+.song-wrapper::-webkit-scrollbar {
     width: 5px;
 }
-.song-container::-webkit-scrollbar-thumb{
+
+.song-container::-webkit-scrollbar-thumb {
     color: var(--theme-color);
     border-radius: 10px;
 }
 
-.song-col{
+.song-col {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -522,18 +531,144 @@ aside {
     cursor: pointer;
     border-radius: 10px;
     background-color: rgb(23 37 51);
-transition: var(--transition-1);
+    transition: var(--transition-1);
 }
-.song-col:hover{
+
+.song-col:hover {
     background-color: var(--theme-color);
 }
 
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
 
+.song-info span {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
 
+.play-img {
+    position: absolute;
+    top: 20%;
+    left: 4.3%;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    transition: var(--transition-1);
+}
 
+.song-col:hover .play-img {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
 
+.song-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+.song-box img {
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
+.song-det {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-det h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--transition-1);
+}
+
+.song-det p {
+    font-size: 13px;
+    color: var(--gray-text);
+    transition: var(--transition-1);
+}
+
+.song-icon-time {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.song-icon-time i {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.song-col:hover .song-icon-time i,
+.song-col:hover .song-icon-time p {
+    color: var(--white-color);
+}
+
+.song-option {
+    position: relative;
+}
+
+.song-option-dropdown {
+    position: absolute;
+    top: 100%;
+    /* overflow: 0; */
+    transform: scale(1);
+    left: -145px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: rgb(23 37 51);
+    box-shadow: 0 0 0 60px rgba(0 0 0 0.2);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    transition: var(--transition-1);
+    z-index: 5;
+}
+.song-option-dropdown::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(23 37 51);
+    transform: rotate(45deg);
+}
+.song-option-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.song-option-box span{
+    width: 21px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(Images/icon.svg);
+    background-position: -205px 3px;
+    background-repeat: no-repeat;
+    transition: var(--transition-1);
+}
+.song-option:hover .fav-option-icon{
+    background-position: -205px -37px;
+}
+.song-option-box .download-option-icon{
+    background-position: -258px 2px;
+}
+.song-option-box:hover .download-option-icon{
+    background-position: -258px -37px;
+}
 
 
 
