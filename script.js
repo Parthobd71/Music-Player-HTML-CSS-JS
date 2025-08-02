@@ -1,10 +1,10 @@
-//SHOW & HIDE SIDEBAR
+// SHOW & HIDE SIDEBAR
 let sidebarBtn = document.querySelector('.sidebar-btn');
 let sidebarIcon = document.querySelector('.sidebar-btn i');
 let aside = document.querySelector('aside');
 
 
-//hide & how sidebar elements
+// hide & how sidebar elements
 let logo = document.querySelector('.logo');
 let miniLogo = document.querySelector('.small-logo');
 let musicMenuH2 = document.querySelectorAll('.music-menu h2');
@@ -20,3 +20,11 @@ sidebarBtn.addEventListener('click', () => {
     musicMenuLi.forEach(li => li.classList.toggle('menu-gap'));
     logo.classList.toggle('hide-element')
 });
+
+// USER DROPDOWN MENU
+let userMenuBtn = document.querySelector('.user-login-wrapper');
+let userDropdown = document.querySelector('.user-wrapper-dropdown');
+
+userMenuBtn.addEventListener('click', () =>{
+    userDropdown.classList.toggle('show-user-element')
+})

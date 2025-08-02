@@ -102,38 +102,94 @@
         <!-----------------------------Main----------------------->
         <div class="hero-container">
             <div class="hero-top">
-                <div class="search-box">
-                    <input type="text" placeholder="Search for SIng, Artist, Playlisit and more.....">
-                    <i class="ri-search-2-line"></i>
+                <div class="hero-top-col">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search for SIng, Artist, Playlisit and more.....">
+                        <i class="ri-search-2-line"></i>
+                    </div>
+                    <span class="notification-icon"> </span>
                 </div>
-                <span class="notification-icon"> </span>
+                <div class="user-info">
+                    <div class="user-img">
+                        <img src="Images/proflile.jpg" alt="">
+                    </div>
+                    <div class="user-login-wrapper">
+                        <h2>Hello, David <i class="ri-arrow-down-s-fill"></i></h2>
+                        <ul class="user-wrapper-dropdown">
+                            <li>
+                                <a href="">
+                                    <span class="icon icon-profile"></span>
+                                    <p>Profile</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon icon-logout"></span>
+                                    <p>Logout</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bars">
+                        <i class="ri-menu-2-fill"></i>
+                    </div>
+                </div>
             </div>
-            <div class="user-info">
-                <div class="user-img">
-                    <img src="Images/proflile.jpg" alt="">
+
+            <!-- SONGS CONTAINER -->
+            <div class="song-container">
+                <div class="songs-tab">
+                    <h2 class="tab1 active-song-list">Today Top Picks</h2>
+                    <h2 class="tab-2">Tranding Songs</h2>
+                    <h2 class="tab-3">New Released</h2>
                 </div>
-                <div class="user-login-wrapper">
-                    <h2>Hello, David <i class="ri-arrow-down-fill"></i></h2>
-                    <ul class="user-wrapper-dropdown">
-                        <li>
-                            <a href="">
-                                <span class="icon icon-profile"></span>
-                                <p>Profile</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="icon icon-logout"></span>
-                                <p>Logout</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bars">
-                    <i class="ri-menu-2-fill"></i>
+
+                <div class="song-wrapper song-wrapper1">
+                    <!-- song-1  -->
+                    <div class="song-col">
+                        <div class="song-info">
+                            <img src="Images/play_songlist.svg" alt="" class="play-img">
+                            <span>01</span>
+                            <div class="song-box">
+                                <img src="Images/s1.jpg" alt="">
+                                <div class="song-det">
+                                    <h2>Walking Promises</h2>
+                                    <p>Harry Jackson, Virginia Harries</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-icon-time">
+                            <i class="ri-heart-2-line"></i>
+                            <p>04:23</p>
+                            <div class="song-option">
+                                <i class="ri-more-2-fill"></i>
+                                <div class="song-option-dropdown">
+                                    <div class="song-option-box">
+                                        <span class="icon fav-option-icon"></span>
+                                        <h3>Favourites</h3>
+                                    </div>
+                                    <div class="song-option-box">
+                                        <span class="icon download-option-icon"></span>
+                                        <h3>Download Now</h3>
+                                    </div>
+                                    <div class="song-option-box">
+                                        <span class="icon ad-pl-option-icon"></span>
+                                        <h3>Add to Playlist</h3>
+                                    </div>
+                                    <div class="song-option-box">
+                                        <span class="icon share-option-icon"></span>
+                                        <h3>Share</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+
     </header>
 
 
