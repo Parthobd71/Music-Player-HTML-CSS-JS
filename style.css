@@ -600,7 +600,10 @@ aside {
 .song-icon-time {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+}
+.song-icon-time p{
+    color: var(--gray-light-text);
 }
 
 .song-icon-time i {
@@ -621,8 +624,8 @@ aside {
 .song-option-dropdown {
     position: absolute;
     top: 100%;
-    /* overflow: 0; */
-    transform: scale(1);
+    opacity: 0;
+    transform: scale(0);
     left: -145px;
     width: 180px;
     border-radius: 10px;
@@ -661,16 +664,44 @@ aside {
     transition: var(--transition-1);
 }
 .song-option:hover .fav-option-icon{
-    background-position: -205px -37px;
+    background-position: -205px 2px;
+}
+.song-option:hover .fav-option-icon{
+    background-position: -205px -35px;
 }
 .song-option-box .download-option-icon{
     background-position: -258px 2px;
 }
 .song-option-box:hover .download-option-icon{
-    background-position: -258px -37px;
+    background-position: -258px -35px;
+}
+.song-option-box .ad-pl-option-icon{
+    background-position: -617px 2px;
+}
+.song-option-box:hover .ad-pl-option-icon{
+    background-position: -617px -35px;
+}
+.song-option-box .share-option-icon{
+    background-position: -660px 2px;
+}
+.song-option-box:hover .ashare-option-icon{
+    background-position: -660px -35px;
 }
 
-
+.song-option-box h3{
+    font-size: 13px;
+    color: var(--gray-light-text);
+    font-weight: 500;
+    transition: var(--transition-1);
+}
+.song-option-box:hover h3{
+    color: var(--theme-color);
+}
+.show-song-option{
+    opacity: 1;
+    transform: scale(1);
+    top: 150%;
+}
 
 
 

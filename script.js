@@ -25,6 +25,20 @@ sidebarBtn.addEventListener('click', () => {
 let userMenuBtn = document.querySelector('.user-login-wrapper');
 let userDropdown = document.querySelector('.user-wrapper-dropdown');
 
-userMenuBtn.addEventListener('click', () =>{
-    userDropdown.classList.toggle('show-user-element')
-})
+userMenuBtn.addEventListener('click', () => {
+    userDropdown.classList.toggle('show-user-element');
+});
+
+// SONG OPTION DROPDOWN
+const songOption = document.querySelectorAll('.song-option');
+songOption.forEach(option =>{
+    option.addEventListener('click', function (){
+        document.querySelectorAll('.song-option-dropdown').forEach(dropdown =>{
+            if(dropdown !== this.querySelector('.song-option-dropdown')){
+                dropdown.classList.remove('show-song-option');
+            };
+        });
+        const dropdown = this.querySelector('.song-option-dropdown');
+        dropdown.classList.toggle('show-song-option');
+    });
+});
